@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px){
+    .grid-layout article{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "p1" 
+            "p2";
+    }
+
+    nav a{
+        display: block;
+        padding: .4em;
+    }
+
+    nav{
+        text-align: left;
+    }
+}

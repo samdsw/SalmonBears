@@ -1,0 +1,9 @@
+@media only screen and (max-width: 800px){
+    .grid-layout article{
+       grid-template-columns: auto auto;
+       grid-template-areas: 
+          "p1 p1" 
+          "table1 figure" 
+          "p2 p2";
+    }
+ }

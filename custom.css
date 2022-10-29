@@ -1,0 +1,179 @@
+form p{
+    margin:0;
+    text-indent: 0;
+    padding: 0.3em;
+    
+}
+
+section.chart figure figcaption{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    
+}
+ 
+body{
+    margin: 0 auto;
+    min-width: 5em;
+    line-height: 2;
+    margin: auto;
+    
+    font-size: larger;
+}
+
+form fieldset{
+    /*! line-height: 1; */
+    border-radius: 0.5em;
+}
+
+.grid-layout p{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid-layout section{
+    min-width: 5em;
+    line-height: 2;
+    margin: auto;
+    
+    font-size: large;
+}
+
+.grid-layout form section{
+    margin: auto;
+    
+    font-size: large;
+    line-height: 1;
+    min-width: 0em;
+}
+
+nav a:hover{
+    color: green;
+}
+
+nav a{
+    display: inline-block;
+    width: 19%;
+    color: blue;
+}
+
+nav{
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.activePage{
+    border-bottom: green thick solid;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: xxx-large;
+    text-shadow: 0em 0em 0.7em steelblue;
+    color: green;
+}
+h2{
+    margin: 1em;
+}
+h3{
+    margin-top: 1em;
+    margin: 1em;
+}
+
+.grid-layout article{
+    display: grid;
+    grid-template-areas:
+        "p1 p1" "array chart" "table1 figure" "p2 p2";
+    grid-template-columns: auto auto;
+}
+
+.grid-layout .p1{
+    grid-area: p1;
+}
+
+.grid-layout .table1{
+    grid-area: table1;
+    margin: 1em;
+}
+
+.grid-layout .figure{
+    grid-area: figure;
+}
+
+.grid-layout .p2{
+    grid-area: p2;
+}
+
+
+table caption{
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-size: larger;
+}
+
+td{
+    border: whitesmoke solid;
+}
+
+.hyperlinks a{
+    color: red;
+}
+.hyperlinks a:hover{
+    color: whitesmoke;
+}
+
+img{
+    max-width: 100%;
+}
+img caption{
+    color: white;
+}
+
+
+p{
+    font-family: 'Verdana, sans-serif';
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    text-indent: 4em;
+}
+
+footer{
+    clear:both;
+}
+
+@media only screen and (max-width: 800px){
+   .grid-layout article{
+      grid-template-columns: auto auto;
+      grid-template-areas: 
+         "p1 p1" 
+         "figure figure" 
+         "p2 p2"
+         "table1"
+          "array chart";
+   }
+}
+
+@media only screen and (max-width: 600px){
+    .grid-layout article{
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "p1" 
+            "table1"
+            "array"
+            "chart"
+            "figure"
+            "p2";
+    }
+
+    nav a{
+        display: block;
+        padding: .4em;
+    }
+
+    nav{
+        text-align: left;
+    }
+}
